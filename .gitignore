@@ -2,3 +2,6 @@
 ./client2_downloads/
 ./server1_storage/
 ./server2_storage/
+./*.log
+./*log*
+./storage/
