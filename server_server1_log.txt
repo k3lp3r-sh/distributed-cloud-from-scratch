@@ -1,0 +1,40 @@
+2025-03-18 10:52:53,001 - __main__ - INFO - Starting server server1
+2025-03-18 10:52:53,001 - __main__ - INFO - Server started on 127.0.0.1:5000
+2025-03-18 10:52:56,161 - __main__ - INFO - Connection established from: ('127.0.0.1', 55356)
+2025-03-18 10:52:56,161 - __main__ - INFO - Request from user1: list
+2025-03-18 10:52:57,172 - __main__ - INFO - Connection established from: ('127.0.0.1', 45922)
+2025-03-18 10:52:57,172 - __main__ - INFO - Request from user2: list
+2025-03-18 10:53:10,917 - __main__ - INFO - Connection established from: ('127.0.0.1', 51340)
+2025-03-18 10:53:10,918 - __main__ - INFO - Request from user1: request_lock
+2025-03-18 10:53:10,918 - __main__ - INFO - Lock granted for file1.txt to user1
+2025-03-18 10:53:10,920 - __main__ - INFO - Connection established from: ('127.0.0.1', 51350)
+2025-03-18 10:53:10,920 - __main__ - INFO - Request from user1: upload
+2025-03-18 10:53:10,921 - __main__ - INFO - File uploaded: file1.txt for user: user1
+2025-03-18 10:53:10,921 - __main__ - INFO - Starting data synchronization
+2025-03-18 10:53:10,922 - __main__ - INFO - Local data is up-to-date or newer. No synchronization needed.
+2025-03-18 10:53:10,922 - __main__ - INFO - Data synchronization completed successfully
+2025-03-18 10:53:10,923 - __main__ - INFO - Connection established from: ('127.0.0.1', 51354)
+2025-03-18 10:53:10,923 - __main__ - INFO - Request from user1: release_lock
+2025-03-18 10:53:10,923 - __main__ - INFO - Lock released for file1.txt by user1
+2025-03-18 10:53:22,082 - __main__ - INFO - Connection established from: ('127.0.0.1', 36612)
+2025-03-18 10:53:22,082 - __main__ - INFO - Request from user2: request_lock
+2025-03-18 10:53:22,082 - __main__ - INFO - Lock granted for file2.txt to user2
+2025-03-18 10:53:22,083 - __main__ - INFO - Connection established from: ('127.0.0.1', 36624)
+2025-03-18 10:53:22,084 - __main__ - INFO - Request from user2: upload
+2025-03-18 10:53:22,085 - __main__ - INFO - File uploaded: file2.txt for user: user2
+2025-03-18 10:53:22,085 - __main__ - INFO - Starting data synchronization
+2025-03-18 10:53:22,086 - __main__ - INFO - Local data is up-to-date or newer. No synchronization needed.
+2025-03-18 10:53:22,086 - __main__ - INFO - Data synchronization completed successfully
+2025-03-18 10:53:22,086 - __main__ - INFO - Connection established from: ('127.0.0.1', 36626)
+2025-03-18 10:53:22,087 - __main__ - INFO - Request from user2: release_lock
+2025-03-18 10:53:22,087 - __main__ - INFO - Lock released for file2.txt by user2
+2025-03-18 10:53:32,018 - __main__ - INFO - Connection established from: ('127.0.0.1', 57878)
+2025-03-18 10:53:32,018 - __main__ - INFO - Request from user2: list
+2025-03-18 10:53:35,529 - __main__ - INFO - Connection established from: ('127.0.0.1', 57888)
+2025-03-18 10:53:35,530 - __main__ - INFO - Request from user1: list
+2025-03-18 10:54:11,936 - __main__ - INFO - Starting server server1
+2025-03-18 10:54:11,936 - __main__ - INFO - Server started on 127.0.0.1:5000
+2025-03-18 10:54:22,035 - __main__ - INFO - Connection established from: ('127.0.0.1', 55558)
+2025-03-18 10:54:22,035 - __main__ - INFO - Request from user1: list
+2025-03-18 10:54:23,601 - __main__ - INFO - Connection established from: ('127.0.0.1', 55574)
+2025-03-18 10:54:23,601 - __main__ - INFO - Request from user2: list

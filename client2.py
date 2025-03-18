@@ -6,10 +6,10 @@ from pathlib import Path
 import time
 
 # Client Configuration
-USER_ID = 'user2'  # Different user ID
+USER_ID = 'user2'
 SERVER_HOSTS = ['127.0.0.1', '127.0.0.1']
 SERVER_PORTS = [5000, 5001]
-DOWNLOAD_PATH = Path('./client2_downloads')  # Different download path
+DOWNLOAD_PATH = Path('./client1_downloads')
 
 # Create download directory if it doesn't exist
 os.makedirs(DOWNLOAD_PATH, exist_ok=True)
@@ -19,7 +19,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("client2_log.txt"),  # Different log file
+        logging.FileHandler("client1_log.txt"),
         logging.StreamHandler()
     ]
 )

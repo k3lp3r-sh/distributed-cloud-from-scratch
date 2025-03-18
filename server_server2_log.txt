@@ -1,0 +1,12 @@
+2025-03-18 10:52:50,466 - __main__ - INFO - Starting server server2
+2025-03-18 10:52:50,467 - __main__ - INFO - Server started on 127.0.0.1:5001
+2025-03-18 10:53:44,754 - __main__ - INFO - Starting server server2
+2025-03-18 10:53:44,754 - __main__ - INFO - Server started on 127.0.0.1:5001
+2025-03-18 10:53:52,466 - __main__ - INFO - Connection established from: ('127.0.0.1', 45224)
+2025-03-18 10:53:52,466 - __main__ - INFO - Request from user1: list
+2025-03-18 10:53:54,052 - __main__ - INFO - Connection established from: ('127.0.0.1', 45234)
+2025-03-18 10:53:54,052 - __main__ - INFO - Request from user2: list
+2025-03-18 10:54:15,443 - __main__ - INFO - Connection established from: ('127.0.0.1', 45828)
+2025-03-18 10:54:15,443 - __main__ - INFO - Request from user1: list
+2025-03-18 10:54:17,610 - __main__ - INFO - Connection established from: ('127.0.0.1', 57442)
+2025-03-18 10:54:17,611 - __main__ - INFO - Request from user2: list

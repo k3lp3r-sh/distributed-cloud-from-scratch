@@ -1,0 +1,81 @@
+2025-03-18 10:52:56,159 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:52:56,160 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:52:56,162 - __main__ - INFO - LISTING SUCCESS: Found 0 files
+2025-03-18 10:53:10,916 - __main__ - INFO - UPLOADING: file1.txt to server
+2025-03-18 10:53:10,916 - __main__ - INFO - Requesting lock for resource: file1.txt
+2025-03-18 10:53:10,917 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:53:10,919 - __main__ - INFO - Lock acquired for resource: file1.txt
+2025-03-18 10:53:10,919 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:53:10,922 - __main__ - INFO - File uploaded successfully
+2025-03-18 10:53:10,922 - __main__ - INFO - UPLOAD SUCCESS: file1.txt successfully uploaded
+2025-03-18 10:53:10,922 - __main__ - INFO - Releasing lock for resource: file1.txt
+2025-03-18 10:53:10,922 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:53:10,923 - __main__ - INFO - Lock released for resource: file1.txt
+2025-03-18 10:53:35,528 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:53:35,529 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:53:35,530 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:53:52,464 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:53:52,465 - __main__ - WARNING - Server at 127.0.0.1:5000 is not available
+2025-03-18 10:53:52,465 - __main__ - INFO - Connected to server at 127.0.0.1:5001
+2025-03-18 10:53:52,467 - __main__ - INFO - LISTING SUCCESS: Found 0 files
+2025-03-18 10:54:15,442 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:54:15,442 - __main__ - INFO - Connected to server at 127.0.0.1:5001
+2025-03-18 10:54:15,444 - __main__ - INFO - LISTING SUCCESS: Found 0 files
+2025-03-18 10:54:22,034 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:54:22,034 - __main__ - WARNING - Server at 127.0.0.1:5001 is not available
+2025-03-18 10:54:22,034 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:54:22,036 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:55:50,646 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:55:50,647 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:55:50,648 - __main__ - INFO - LISTING SUCCESS: Found 0 files
+2025-03-18 10:55:57,506 - __main__ - INFO - UPLOADING: file1.txt to server
+2025-03-18 10:55:57,506 - __main__ - INFO - Requesting lock for resource: file1.txt
+2025-03-18 10:55:57,506 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:55:57,509 - __main__ - INFO - Lock acquired for resource: file1.txt
+2025-03-18 10:55:57,509 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:55:57,514 - __main__ - INFO - File uploaded successfully
+2025-03-18 10:55:57,514 - __main__ - INFO - UPLOAD SUCCESS: file1.txt successfully uploaded
+2025-03-18 10:55:57,514 - __main__ - INFO - Releasing lock for resource: file1.txt
+2025-03-18 10:55:57,514 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:55:57,515 - __main__ - INFO - Lock released for resource: file1.txt
+2025-03-18 10:55:59,880 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:55:59,881 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:55:59,882 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:56:22,030 - __main__ - INFO - UPLOADING: . to server
+2025-03-18 10:56:22,030 - __main__ - INFO - Requesting lock for resource: 
+2025-03-18 10:56:22,038 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:56:22,040 - __main__ - INFO - Lock acquired for resource: 
+2025-03-18 10:56:22,040 - __main__ - INFO - Releasing lock for resource: 
+2025-03-18 10:56:22,040 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:56:22,041 - __main__ - INFO - Lock released for resource: 
+2025-03-18 10:56:26,277 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:56:26,278 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:56:26,279 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:56:34,604 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:56:34,605 - __main__ - WARNING - Server at 127.0.0.1:5000 is not available
+2025-03-18 10:56:34,613 - __main__ - INFO - Connected to server at 127.0.0.1:5001
+2025-03-18 10:56:34,614 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:59:30,017 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:59:30,017 - __main__ - WARNING - Server at 127.0.0.1:5001 is not available
+2025-03-18 10:59:30,017 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:59:30,019 - __main__ - INFO - LISTING SUCCESS: Found 1 files
+2025-03-18 10:59:45,896 - __main__ - INFO - UPLOADING: file2.txt to server
+2025-03-18 10:59:45,897 - __main__ - INFO - Requesting lock for resource: file2.txt
+2025-03-18 10:59:45,897 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:59:45,898 - __main__ - INFO - Lock acquired for resource: file2.txt
+2025-03-18 10:59:45,899 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:59:45,901 - __main__ - INFO - File uploaded, but replication failed
+2025-03-18 10:59:45,901 - __main__ - ERROR - UPLOAD FAILED: file2.txt
+2025-03-18 10:59:45,901 - __main__ - INFO - Releasing lock for resource: file2.txt
+2025-03-18 10:59:45,901 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:59:45,902 - __main__ - INFO - Lock released for resource: file2.txt
+2025-03-18 10:59:53,648 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 10:59:53,648 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 10:59:53,650 - __main__ - INFO - LISTING SUCCESS: Found 2 files
+2025-03-18 11:00:01,117 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 11:00:01,118 - __main__ - INFO - Connected to server at 127.0.0.1:5000
+2025-03-18 11:00:01,119 - __main__ - INFO - LISTING SUCCESS: Found 2 files
+2025-03-18 11:00:06,956 - __main__ - INFO - LISTING: Retrieving file list from server
+2025-03-18 11:00:06,956 - __main__ - WARNING - Server at 127.0.0.1:5000 is not available
+2025-03-18 11:00:06,957 - __main__ - INFO - Connected to server at 127.0.0.1:5001
+2025-03-18 11:00:06,958 - __main__ - INFO - LISTING SUCCESS: Found 1 files

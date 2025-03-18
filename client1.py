@@ -6,10 +6,10 @@ from pathlib import Path
 import time
 
 # Client Configuration
-USER_ID = 'user1'
+USER_ID = 'user1'  # Change to 'user2' for the second client
 SERVER_HOSTS = ['127.0.0.1', '127.0.0.1']
 SERVER_PORTS = [5000, 5001]
-DOWNLOAD_PATH = Path('./client1_downloads')
+DOWNLOAD_PATH = Path(f'./client_{USER_ID}_downloads')
 
 # Create download directory if it doesn't exist
 os.makedirs(DOWNLOAD_PATH, exist_ok=True)
@@ -19,7 +19,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("client1_log.txt"),
+        logging.FileHandler(f"client_{USER_ID}_log.txt"),
         logging.StreamHandler()
     ]
 )
@@ -31,7 +31,7 @@ class Client:
         self.server_hosts = server_hosts
         self.server_ports = server_ports
         self.current_server_index = 0
-
+    
     def connect_to_available_server(self):
         """Try to connect to an available server."""
         for i in range(len(self.server_hosts)):
@@ -47,9 +47,9 @@ class Client:
                 logger.warning(f"Server at {self.server_hosts[idx]}:{self.server_ports[idx]} is not available")
                 continue
         raise ConnectionError("All servers are unavailable")
-
+    
     def request_lock(self, resource_id):
-        """Request a lock for a specific resource using Maekawa's algorithm."""
+        """Request a lock for a specific resource."""
         logger.info(f"Requesting lock for resource: {resource_id}")
         try:
             with self.connect_to_available_server() as s:
@@ -58,7 +58,6 @@ class Client:
                     'action': 'request_lock',
                     'resource_id': resource_id
                 }
-                
                 s.sendall(json.dumps(request).encode('utf-8'))
                 s.settimeout(10)
                 response = s.recv(1024).decode('utf-8')
@@ -85,7 +84,7 @@ class Client:
         except Exception as e:
             logger.error(f"Error requesting lock: {e}")
             return False
-
+    
     def release_lock(self, resource_id):
         """Release a lock for a specific resource."""
         logger.info(f"Releasing lock for resource: {resource_id}")
@@ -97,7 +96,6 @@ class Client:
                     'resource_id': resource_id
                 }
                 s.sendall(json.dumps(request).encode('utf-8'))
-                
                 response = s.recv(1024).decode('utf-8')
                 response_data = json.loads(response)
                 
@@ -118,9 +116,9 @@ class Client:
         except Exception as e:
             logger.error(f"Error releasing lock: {e}")
             return False
-
+    
     def list_files(self):
-        """List all files stored for this user on the server."""
+        """List all files stored on the server."""
         logger.info("LISTING: Retrieving file list from server")
         try:
             with self.connect_to_available_server() as s:
@@ -129,7 +127,6 @@ class Client:
                     'action': 'list'
                 }
                 s.sendall(json.dumps(request).encode('utf-8'))
-                
                 response = s.recv(1024).decode('utf-8')
                 response_data = json.loads(response)
                 
@@ -151,25 +148,25 @@ class Client:
         except Exception as e:
             logger.error(f"LISTING FAILED: {e}")
             return []
-
+    
     def upload_file(self, file_path):
-        """Upload a file to the server with improved error handling."""
+        """Upload a file to the server."""
         file_path = Path(file_path)
         logger.info(f"UPLOADING: {file_path} to server")
         
         if not file_path.exists():
             logger.error(f"UPLOAD FAILED: File not found: {file_path}")
             return False
-
+        
         # First acquire lock for this file
         if not self.request_lock(file_path.name):
             logger.error(f"UPLOAD FAILED: Could not acquire lock for {file_path.name}")
             return False
-
+        
         try:
             with open(file_path, 'rb') as f:
                 file_data = f.read()
-                
+            
             with self.connect_to_available_server() as s:
                 request = {
                     'user_id': self.user_id,
@@ -211,12 +208,10 @@ class Client:
                     response_data = json.loads(response)
                     logger.info(response_data.get('message', 'No message from server'))
                     success = response_data.get('status') == 'success'
-                    
                     if success:
                         logger.info(f"UPLOAD SUCCESS: {file_path.name} successfully uploaded")
                     else:
                         logger.error(f"UPLOAD FAILED: {file_path.name}")
-                    
                     return success
                 except socket.timeout:
                     # Verification step: check if file was uploaded despite timeout
@@ -231,7 +226,7 @@ class Client:
         finally:
             # Always release the lock
             self.release_lock(file_path.name)
-
+    
     def download_file(self, filename):
         """Download a file from the server."""
         logger.info(f"DOWNLOADING: {filename} from server")
@@ -243,7 +238,6 @@ class Client:
                     'filename': filename
                 }
                 s.sendall(json.dumps(request).encode('utf-8'))
-                
                 response = s.recv(1024).decode('utf-8')
                 response_data = json.loads(response)
                 
@@ -284,7 +278,7 @@ class Client:
         except Exception as e:
             logger.error(f"DOWNLOAD FAILED: {e}")
             return False
-
+    
     def delete_file(self, filename):
         """Delete a file from the server."""
         logger.info(f"DELETING: {filename} from server")
@@ -293,7 +287,7 @@ class Client:
         if not self.request_lock(filename):
             logger.error(f"DELETE FAILED: Could not acquire lock for {filename}")
             return False
-
+        
         try:
             with self.connect_to_available_server() as s:
                 request = {
@@ -302,7 +296,6 @@ class Client:
                     'filename': filename
                 }
                 s.sendall(json.dumps(request).encode('utf-8'))
-                
                 response = s.recv(1024).decode('utf-8')
                 response_data = json.loads(response)
                 
@@ -324,7 +317,6 @@ class Client:
                     logger.info(f"DELETE SUCCESS: {filename} removed from server")
                 else:
                     logger.error(f"DELETE FAILED: {response_data.get('message')}")
-                
                 return success
         finally:
             # Always release the lock
@@ -365,11 +357,11 @@ def main():
             if not files:
                 print("No files available to download.")
                 continue
-                
+            
             print("\nYour files:")
             for i, file in enumerate(files, 1):
                 print(f"{i}. {file}")
-                
+            
             try:
                 file_idx = int(input("Enter the number of the file to download: ")) - 1
                 if 0 <= file_idx < len(files):
@@ -384,11 +376,11 @@ def main():
             if not files:
                 print("No files available to delete.")
                 continue
-                
+            
             print("\nYour files:")
             for i, file in enumerate(files, 1):
                 print(f"{i}. {file}")
-                
+            
             try:
                 file_idx = int(input("Enter the number of the file to delete: ")) - 1
                 if 0 <= file_idx < len(files):
@@ -405,7 +397,7 @@ def main():
         elif choice == '5':
             print("\nExiting client. Goodbye!")
             break
-            
+        
         else:
             print("\nInvalid choice. Please try again.")
         

@@ -1,101 +1,76 @@
-{"timestamp": "2025-03-18T00:43:42.101014", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:54874"}
-{"timestamp": "2025-03-18T00:43:42.101461", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:54874", "details": {"files": []}}
-{"timestamp": "2025-03-18T00:43:42.101616", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:54874"}
-{"timestamp": "2025-03-18T00:43:56.175849", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:41900"}
-{"timestamp": "2025-03-18T00:43:56.176469", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:43:56.176746", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:43:56.177067", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:41900"}
-{"timestamp": "2025-03-18T00:43:56.177864", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:41904"}
-{"timestamp": "2025-03-18T00:43:56.178693", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user2", "resource_id": "file1.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:43:56.180859", "server_id": 0, "operation": "sync_success", "success": true, "user_id": "user2", "resource_id": "file1.txt", "details": {"server_id": 1}}
-{"timestamp": "2025-03-18T00:43:56.181182", "server_id": 0, "operation": "sync_all_replicas_success", "success": true, "user_id": "user2", "resource_id": "file1.txt"}
-{"timestamp": "2025-03-18T00:43:56.181416", "server_id": 0, "operation": "upload", "success": true, "user_id": "user2", "resource_id": "file1.txt", "remote_addr": "127.0.0.1:41904", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:43:56.181741", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:41904"}
-{"timestamp": "2025-03-18T00:43:56.182623", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:41920"}
-{"timestamp": "2025-03-18T00:43:56.183298", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:43:56.183728", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:41920"}
-{"timestamp": "2025-03-18T00:44:05.156172", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:60642"}
-{"timestamp": "2025-03-18T00:44:05.164155", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:60642", "details": {"files": []}}
-{"timestamp": "2025-03-18T00:44:05.164561", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:60642"}
-{"timestamp": "2025-03-18T00:44:09.429377", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:60654"}
-{"timestamp": "2025-03-18T00:44:09.430414", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:60654", "details": {"files": ["file1.txt"]}}
-{"timestamp": "2025-03-18T00:44:09.431549", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:60654"}
-{"timestamp": "2025-03-18T00:44:18.111617", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:39554"}
-{"timestamp": "2025-03-18T00:44:18.112286", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:44:18.112528", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:44:18.112882", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:39554"}
-{"timestamp": "2025-03-18T00:44:18.113615", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:39566"}
-{"timestamp": "2025-03-18T00:44:18.114493", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user1", "resource_id": "file2.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:44:18.116473", "server_id": 0, "operation": "sync_success", "success": true, "user_id": "user1", "resource_id": "file2.txt", "details": {"server_id": 1}}
-{"timestamp": "2025-03-18T00:44:18.116805", "server_id": 0, "operation": "sync_all_replicas_success", "success": true, "user_id": "user1", "resource_id": "file2.txt"}
-{"timestamp": "2025-03-18T00:44:18.117044", "server_id": 0, "operation": "upload", "success": true, "user_id": "user1", "resource_id": "file2.txt", "remote_addr": "127.0.0.1:39566", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:44:18.117362", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:39566"}
-{"timestamp": "2025-03-18T00:44:18.118299", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:39574"}
-{"timestamp": "2025-03-18T00:44:18.118774", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:44:18.119156", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:39574"}
-{"timestamp": "2025-03-18T00:44:40.731029", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:36982"}
-{"timestamp": "2025-03-18T00:44:40.731857", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:36982", "details": {"files": ["file2.txt"]}}
-{"timestamp": "2025-03-18T00:44:40.732205", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:36982"}
-{"timestamp": "2025-03-18T00:46:53.011864", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:58376"}
-{"timestamp": "2025-03-18T00:46:53.012803", "server_id": 0, "operation": "sync_received", "success": true, "user_id": "user1", "resource_id": "file2.txt", "remote_addr": "127.0.0.1:58376", "details": {"source_server": 1, "file_size": 12}}
-{"timestamp": "2025-03-18T00:46:53.013205", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:58376"}
-{"timestamp": "2025-03-18T00:47:19.869328", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:49682"}
-{"timestamp": "2025-03-18T00:47:19.869683", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:49682", "details": {"files": ["file1.txt"]}}
-{"timestamp": "2025-03-18T00:47:19.869819", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:49682"}
-{"timestamp": "2025-03-18T00:47:22.924053", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:49688"}
-{"timestamp": "2025-03-18T00:47:22.924674", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:47:22.924935", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:47:22.925265", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:49688"}
-{"timestamp": "2025-03-18T00:47:22.926005", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:49692"}
-{"timestamp": "2025-03-18T00:47:22.926501", "server_id": 0, "operation": "sync_delete_start", "success": true, "user_id": "user2", "resource_id": "file1.txt"}
-{"timestamp": "2025-03-18T00:47:22.928121", "server_id": 0, "operation": "sync_delete_success", "success": true, "user_id": "user2", "resource_id": "file1.txt", "details": {"server_id": 1}}
-{"timestamp": "2025-03-18T00:47:22.928445", "server_id": 0, "operation": "sync_delete_all_replicas_success", "success": true, "user_id": "user2", "resource_id": "file1.txt"}
-{"timestamp": "2025-03-18T00:47:22.928676", "server_id": 0, "operation": "delete", "success": true, "user_id": "user2", "resource_id": "file1.txt", "remote_addr": "127.0.0.1:49692"}
-{"timestamp": "2025-03-18T00:47:22.928924", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:49692"}
-{"timestamp": "2025-03-18T00:47:22.929798", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:49700"}
-{"timestamp": "2025-03-18T00:47:22.930189", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:47:22.930445", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:49700"}
-{"timestamp": "2025-03-18T00:47:26.117700", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:33126"}
-{"timestamp": "2025-03-18T00:47:26.118799", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:33126", "details": {"files": []}}
-{"timestamp": "2025-03-18T00:47:26.119323", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:33126"}
-{"timestamp": "2025-03-18T00:47:59.484935", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:35724"}
-{"timestamp": "2025-03-18T00:47:59.485312", "server_id": 0, "operation": "sync_received", "success": true, "user_id": "user1", "resource_id": "file1.txt", "remote_addr": "127.0.0.1:35724", "details": {"source_server": 1, "file_size": 12}}
-{"timestamp": "2025-03-18T00:47:59.485460", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:35724"}
-{"timestamp": "2025-03-18T00:48:35.015581", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:52666"}
-{"timestamp": "2025-03-18T00:48:35.016167", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:35.016390", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:35.016715", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:52666"}
-{"timestamp": "2025-03-18T00:48:35.017479", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:52682"}
-{"timestamp": "2025-03-18T00:48:35.018347", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user1", "resource_id": "file1.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:48:35.018694", "server_id": 0, "operation": "sync_error", "success": false, "user_id": "user1", "resource_id": "file1.txt", "details": {"server_id": 1, "error": "[Errno 111] Connection refused"}}
-{"timestamp": "2025-03-18T00:48:35.019063", "server_id": 0, "operation": "sync_overall_failure", "success": true, "user_id": "user1", "resource_id": "file1.txt"}
-{"timestamp": "2025-03-18T00:48:35.019231", "server_id": 0, "operation": "upload_replication_failed", "success": false, "user_id": "user1", "resource_id": "file1.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:48:35.019465", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:52682"}
-{"timestamp": "2025-03-18T00:48:35.020287", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:52696"}
-{"timestamp": "2025-03-18T00:48:35.020699", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:35.021013", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:52696"}
-{"timestamp": "2025-03-18T00:48:56.669107", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46214"}
-{"timestamp": "2025-03-18T00:48:56.669704", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:56.669944", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:56.670242", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46214"}
-{"timestamp": "2025-03-18T00:48:56.671053", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46222"}
-{"timestamp": "2025-03-18T00:48:56.671799", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user2", "resource_id": "file1.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:48:56.672129", "server_id": 0, "operation": "sync_error", "success": false, "user_id": "user2", "resource_id": "file1.txt", "details": {"server_id": 1, "error": "[Errno 111] Connection refused"}}
-{"timestamp": "2025-03-18T00:48:56.672511", "server_id": 0, "operation": "sync_overall_failure", "success": true, "user_id": "user2", "resource_id": "file1.txt"}
-{"timestamp": "2025-03-18T00:48:56.672712", "server_id": 0, "operation": "upload_replication_failed", "success": false, "user_id": "user2", "resource_id": "file1.txt", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:48:56.672960", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46222"}
-{"timestamp": "2025-03-18T00:48:56.673830", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46238"}
-{"timestamp": "2025-03-18T00:48:56.674405", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
-{"timestamp": "2025-03-18T00:48:56.674845", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46238"}
-{"timestamp": "2025-03-18T00:48:59.787547", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46254"}
-{"timestamp": "2025-03-18T00:48:59.788577", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:46254", "details": {"files": ["file1.txt"]}}
-{"timestamp": "2025-03-18T00:48:59.788947", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46254"}
-{"timestamp": "2025-03-18T00:49:22.556076", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:37164"}
-{"timestamp": "2025-03-18T00:49:22.557024", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:37164", "details": {"files": ["file1.txt"]}}
-{"timestamp": "2025-03-18T00:49:22.557351", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:37164"}
-{"timestamp": "2025-03-18T00:49:29.183647", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:55848"}
-{"timestamp": "2025-03-18T00:49:29.184621", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:55848", "details": {"files": ["file1.txt"]}}
-{"timestamp": "2025-03-18T00:49:29.185171", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:55848"}
-{"timestamp": "2025-03-18T00:49:30.439732", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:55852"}
-{"timestamp": "2025-03-18T00:49:30.440915", "server_id": 0, "operation": "download", "success": true, "user_id": "user2", "resource_id": "file1.txt", "remote_addr": "127.0.0.1:55852", "details": {"file_size": 12}}
-{"timestamp": "2025-03-18T00:49:30.441262", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:55852"}
+{"timestamp": "2025-03-18T10:55:48.571723", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:45474"}
+{"timestamp": "2025-03-18T10:55:48.573226", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:45474", "details": {"files": []}}
+{"timestamp": "2025-03-18T10:55:48.573584", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:45474"}
+{"timestamp": "2025-03-18T10:55:50.647759", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:45482"}
+{"timestamp": "2025-03-18T10:55:50.648672", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:45482", "details": {"files": []}}
+{"timestamp": "2025-03-18T10:55:50.648995", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:45482"}
+{"timestamp": "2025-03-18T10:55:57.507357", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51386"}
+{"timestamp": "2025-03-18T10:55:57.508123", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:55:57.508629", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:55:57.508942", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51386"}
+{"timestamp": "2025-03-18T10:55:57.510224", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51390"}
+{"timestamp": "2025-03-18T10:55:57.510985", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user1", "resource_id": "file1.txt", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:55:57.513259", "server_id": 0, "operation": "sync_success", "success": true, "user_id": "user1", "resource_id": "file1.txt", "details": {"server_id": 1}}
+{"timestamp": "2025-03-18T10:55:57.513576", "server_id": 0, "operation": "sync_all_replicas_success", "success": true, "user_id": "user1", "resource_id": "file1.txt"}
+{"timestamp": "2025-03-18T10:55:57.513809", "server_id": 0, "operation": "upload", "success": true, "user_id": "user1", "resource_id": "file1.txt", "remote_addr": "127.0.0.1:51390", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:55:57.514108", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51390"}
+{"timestamp": "2025-03-18T10:55:57.515013", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51400"}
+{"timestamp": "2025-03-18T10:55:57.515467", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file1.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:55:57.515716", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51400"}
+{"timestamp": "2025-03-18T10:55:59.881674", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51402"}
+{"timestamp": "2025-03-18T10:55:59.882588", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:51402", "details": {"files": ["file1.txt"]}}
+{"timestamp": "2025-03-18T10:55:59.882934", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51402"}
+{"timestamp": "2025-03-18T10:56:06.492548", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:57822"}
+{"timestamp": "2025-03-18T10:56:06.493341", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:06.493938", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:06.494279", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:57822"}
+{"timestamp": "2025-03-18T10:56:06.495220", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:57828"}
+{"timestamp": "2025-03-18T10:56:06.496159", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user2", "resource_id": "file2.txt", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:56:06.498095", "server_id": 0, "operation": "sync_success", "success": true, "user_id": "user2", "resource_id": "file2.txt", "details": {"server_id": 1}}
+{"timestamp": "2025-03-18T10:56:06.498413", "server_id": 0, "operation": "sync_all_replicas_success", "success": true, "user_id": "user2", "resource_id": "file2.txt"}
+{"timestamp": "2025-03-18T10:56:06.498623", "server_id": 0, "operation": "upload", "success": true, "user_id": "user2", "resource_id": "file2.txt", "remote_addr": "127.0.0.1:57828", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:56:06.498886", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:57828"}
+{"timestamp": "2025-03-18T10:56:06.499669", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:57844"}
+{"timestamp": "2025-03-18T10:56:06.500095", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:06.500428", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:57844"}
+{"timestamp": "2025-03-18T10:56:08.581321", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:57848"}
+{"timestamp": "2025-03-18T10:56:08.582327", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:57848", "details": {"files": ["file2.txt"]}}
+{"timestamp": "2025-03-18T10:56:08.582702", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:57848"}
+{"timestamp": "2025-03-18T10:56:22.038973", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46152"}
+{"timestamp": "2025-03-18T10:56:22.039471", "server_id": 0, "operation": "request_lock", "success": true, "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:22.039689", "server_id": 0, "operation": "grant_lock", "success": true, "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:22.039956", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46152"}
+{"timestamp": "2025-03-18T10:56:22.040867", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46166"}
+{"timestamp": "2025-03-18T10:56:22.041367", "server_id": 0, "operation": "release_lock", "success": true, "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:56:22.041726", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46166"}
+{"timestamp": "2025-03-18T10:56:26.278973", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:46182"}
+{"timestamp": "2025-03-18T10:56:26.279707", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:46182", "details": {"files": ["file1.txt"]}}
+{"timestamp": "2025-03-18T10:56:26.280015", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:46182"}
+{"timestamp": "2025-03-18T10:56:28.719800", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:41276"}
+{"timestamp": "2025-03-18T10:56:28.720950", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:41276", "details": {"files": ["file2.txt"]}}
+{"timestamp": "2025-03-18T10:56:28.721344", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:41276"}
+{"timestamp": "2025-03-18T10:59:30.018270", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:60900"}
+{"timestamp": "2025-03-18T10:59:30.019074", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:60900", "details": {"files": ["file1.txt"]}}
+{"timestamp": "2025-03-18T10:59:30.019365", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:60900"}
+{"timestamp": "2025-03-18T10:59:32.757156", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:60910"}
+{"timestamp": "2025-03-18T10:59:32.757840", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user2", "resource_id": "directory", "remote_addr": "127.0.0.1:60910", "details": {"files": ["file2.txt"]}}
+{"timestamp": "2025-03-18T10:59:32.758077", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:60910"}
+{"timestamp": "2025-03-18T10:59:45.897717", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51202"}
+{"timestamp": "2025-03-18T10:59:45.898277", "server_id": 0, "operation": "request_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:59:45.898457", "server_id": 0, "operation": "grant_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:59:45.898715", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51202"}
+{"timestamp": "2025-03-18T10:59:45.899380", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51210"}
+{"timestamp": "2025-03-18T10:59:45.899977", "server_id": 0, "operation": "sync_start", "success": true, "user_id": "user1", "resource_id": "file2.txt", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:59:45.900296", "server_id": 0, "operation": "sync_error", "success": false, "user_id": "user1", "resource_id": "file2.txt", "details": {"server_id": 1, "error": "[Errno 111] Connection refused"}}
+{"timestamp": "2025-03-18T10:59:45.900630", "server_id": 0, "operation": "sync_overall_failure", "success": true, "user_id": "user1", "resource_id": "file2.txt"}
+{"timestamp": "2025-03-18T10:59:45.900787", "server_id": 0, "operation": "upload_replication_failed", "success": false, "user_id": "user1", "resource_id": "file2.txt", "details": {"file_size": 12}}
+{"timestamp": "2025-03-18T10:59:45.900997", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51210"}
+{"timestamp": "2025-03-18T10:59:45.902013", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:51212"}
+{"timestamp": "2025-03-18T10:59:45.902485", "server_id": 0, "operation": "release_lock", "success": true, "resource_id": "file2.txt", "details": {"requester_id": 0}}
+{"timestamp": "2025-03-18T10:59:45.902777", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:51212"}
+{"timestamp": "2025-03-18T10:59:53.649097", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:57514"}
+{"timestamp": "2025-03-18T10:59:53.650092", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:57514", "details": {"files": ["file2.txt", "file1.txt"]}}
+{"timestamp": "2025-03-18T10:59:53.650519", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:57514"}
+{"timestamp": "2025-03-18T11:00:01.118588", "server_id": 0, "operation": "connection_received", "success": true, "remote_addr": "127.0.0.1:58568"}
+{"timestamp": "2025-03-18T11:00:01.119508", "server_id": 0, "operation": "list_files", "success": true, "user_id": "user1", "resource_id": "directory", "remote_addr": "127.0.0.1:58568", "details": {"files": ["file2.txt", "file1.txt"]}}
+{"timestamp": "2025-03-18T11:00:01.119852", "server_id": 0, "operation": "connection_closed", "success": true, "remote_addr": "127.0.0.1:58568"}
